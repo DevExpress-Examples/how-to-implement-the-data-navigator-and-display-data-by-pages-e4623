@@ -1,0 +1,17 @@
+<div data-dx-role="view" data-dx-name="Index" data-dx-title="Home">
+    <div data-dx-role="command" data-bind="dxCommand: {
+        location: 'back', 
+        title: 'PREV', 
+        action: handlePrevButtonClick,
+        visible: prevButtonVisible
+    }"></div>
+    <div data-dx-role="command" data-bind="dxCommand: {
+        location: 'create', 
+        title: 'NEXT', 
+        action: handleNextButtonClick,
+        visible: nextButtonVisible
+    }"></div>
+    <div data-dx-target-placeholder="content" >
+        <div data-bind="dxList: {dataSource: dataSource}"></div>
+    </div>
+</div>
